@@ -1,15 +1,16 @@
-
-
 Algoritmo "Menu API"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi
+// Disciplina: API
+// Alunos: Anna Carolina, Cauã Mohor, Fagner Louis, Flavio Pereira, John Henri, Lucas Castro, Luiz Gustavo, Richard Jhonatan
+// Curso: Banco de Dados 2025-1
 
 Var   //Declarando variavel para ser lida
+
    opcao, enter : inteiro
 
 
-Inicio                     //criando menu para as operações
+Inicio
 
+   //criando menu para as operações
    escreval("-----------Projeto API 2025-1----------")
    escreval("-Calculadora de Operações Matemáticas-")
    escreval("---------------------------------------")
@@ -45,57 +46,57 @@ Inicio                     //criando menu para as operações
 
    //utilizando estrutura condicional
    se (opcao = 1) entao
-      escreval ("                ------------------------------------------")
-      escreval ("                        Sequência de Fibonacci            ")
-      escreval ("                ------------------------------------------")
+      escreval ("------------------------------------------")
+      escreval ("        Sequência de Fibonacci            ")
+      escreval ("------------------------------------------")
    fimse
 
    se (opcao = 2) entao
-      escreval ("                ------------------------------------------")
-      escreval ("                        Números Triangulares              ")
-      escreval ("                ------------------------------------------")
+      escreval ("------------------------------------------")
+      escreval ("        Números Triangulares              ")
+      escreval ("------------------------------------------")
    fimse
 
    se (opcao = 3) entao
-      escreval ("                ------------------------------------------")
-      escreval ("                        Sequência de Números Primos       ")
-      escreval ("                ------------------------------------------")
+      escreval ("------------------------------------------")
+      escreval ("        Sequência de Números Primos       ")
+      escreval ("------------------------------------------")
    fimse
 
    se (opcao = 4) entao
-      escreval ("                 -----------------------------------------")
-      escreval ("                         Sequência Fatorial               ")
-      escreval ("                 -----------------------------------------")
+      escreval ("-----------------------------------------")
+      escreval ("        Sequência Fatorial               ")
+      escreval ("-----------------------------------------")
    fimse
 
    se (opcao = 5) entao
-      escreval("                  ---------------------------------------- ")
-      escreval ("                      Sequência de Quadrados Perfeitos    ")
-      escreval ("                 ---------------------------------------- ")
+      escreval ("---------------------------------------- ")
+      escreval ("     Sequência de Quadrados Perfeitos    ")
+      escreval ("---------------------------------------- ")
    fimse
 
    se (opcao = 6) entao
-      escreval ("                 -----------------------------------------")
-      escreval ("                         Sequência de Cubos               ")
-      escreval ("                 -----------------------------------------")
+      escreval ("-----------------------------------------")
+      escreval ("        Sequência de Cubos               ")
+      escreval ("-----------------------------------------")
    fimse
 
    se (opcao = 7) entao
-      escreval ("                 -----------------------------------------")
-      escreval ("                         Sequência Geométrica             ")
-      escreval ("                 -----------------------------------------")
+      escreval ("-----------------------------------------")
+      escreval ("        Sequência Geométrica             ")
+      escreval ("-----------------------------------------")
    fimse
 
    se (opcao = 8) entao
-      escreval ("                 -----------------------------------------")
-      escreval ("                         Sequência Alternada              ")
-      escreval ("                 -----------------------------------------")
+      escreval ("-----------------------------------------")
+      escreval ("        Sequência Alternada              ")
+      escreval ("-----------------------------------------")
    fimse
 
    se (opcao = 9) entao
-      escreval ("                 ---------------------------------------- ")
-      escreval ("                         Sequência de Tribonacci          ")
-      escreval ("                 ---------------------------------------- ")
+      escreval ("---------------------------------------- ")
+      escreval ("        Sequência de Tribonacci          ")
+      escreval ("---------------------------------------- ")
    fimse
 
    se (opcao = 10) entao
@@ -120,11 +121,11 @@ Inicio                     //criando menu para as operações
    fimse
    //mesclando condicionais com operadores
    se (opcao < 0) ou (opcao >10) entao
-      escreval ("                ------------------------------------------")
-      escreval ("                |            Comando Inválido !!         |")
-      escreval ("                ------------------------------------------")
+      escreval ("------------------------------------------")
+      escreval ("|            Comando Inválido !!         |")
+      escreval ("------------------------------------------")
       escreval (" ")
-      escreval ("                            Volte para o Menu")
+      escreval ("            Volte para o Menu")
    fimse
 
 
