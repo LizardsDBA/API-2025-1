@@ -7,10 +7,6 @@ Algoritmo "Menu API"
 Var   //Declarando variavel para ser lida
    opcao, enter : inteiro
 
-   //fatorial
-   Contador, NumeroInserido, Fatorial : inteiro
-   decisao: caractere
-
 
 Inicio                     //criando menu para as operações
 
