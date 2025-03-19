@@ -1,9 +1,11 @@
+
+
 Algoritmo "Menu API"
-// Disciplina   : [Linguagem e Lógica de Programação] 
-// Professor   : Antonio Carlos Nicolodi 
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
 
 Var   //Declarando variavel para ser lida
-   opcao : inteiro
+   opcao, enter : inteiro
 
    //fatorial
    Contador, NumeroInserido, Fatorial : inteiro
@@ -11,6 +13,16 @@ Var   //Declarando variavel para ser lida
 
 
 Inicio                     //criando menu para as operações
+
+   escreval("-----------Projeto API 2025-1----------")
+   escreval("-Calculadora de Operações Matemáticas-")
+   escreval("---------------------------------------")
+   escreval("")
+   escreval("Pressione enter para continuar")
+   leia(enter)
+   limpatela
+
+
    escreval (" --------------------------------------------------------")
    escreval ("                Menu de Operações Matemáticas   ")
    escreval (" --------------------------------------------------------")
@@ -26,6 +38,7 @@ Inicio                     //criando menu para as operações
    escreval ("7- Sequência Geométrica")
    escreval ("8- Sequência Alternada")
    escreval ("9- Sequência de Tribonacci")
+   escreval ("10 - Informações do Projeto")
    escreval ("0- Fechar")
    escreval (" ")
    escreval(" Escolha uma operação: ")
@@ -39,94 +52,78 @@ Inicio                     //criando menu para as operações
       escreval ("                ------------------------------------------")
       escreval ("                        Sequência de Fibonacci            ")
       escreval ("                ------------------------------------------")
-      escreval (" ")
-      //leitura dos valores
-      escreval (">> Insira os valores")
-      escreval (" ")
-      escreval (" ")
-      escreval (" ")
-      escreval (" ")
-      //opções de saída da operação atual
-      escreval ("M - Menu")
-      escreval ("F - Fechar Programa")
-      //fim da estrutra
    fimse
+
    se (opcao = 2) entao
       escreval ("                ------------------------------------------")
       escreval ("                        Números Triangulares              ")
       escreval ("                ------------------------------------------")
    fimse
+
    se (opcao = 3) entao
       escreval ("                ------------------------------------------")
       escreval ("                        Sequência de Números Primos       ")
       escreval ("                ------------------------------------------")
    fimse
 
-   //------------------------------------------------------------------------
-
-
    se (opcao = 4) entao
       escreval ("                 -----------------------------------------")
       escreval ("                         Sequência Fatorial               ")
       escreval ("                 -----------------------------------------")
-
-
-      repita
-         escreva("Digite o numero desejado: ")
-         leia (NumeroInserido)
-         Contador <- NumeroInserido
-         Fatorial <- 1
-         escreval("--------------------")
-         repita
-            escreva (Contador, " x ")
-
-            Fatorial <- Fatorial * Contador
-            Contador <- Contador - 1
-         ate (Contador < 1)
-         escreval(" ")
-         escreva ("--------------------")
-         escreval(" ")
-         escreval(" ")
-         escreval("O valor fatorial de ", NumeroInserido, " é igual a: ", Fatorial)
-         escreval(" ")
-         escreva ("Deseja fazer outro cálculo ? [S/N] ")
-         leia (decisao)
-         limpatela
-      ate(decisao = "N")
    fimse
-
-   //-------------------------------------------------------------------------
 
    se (opcao = 5) entao
       escreval("                  ---------------------------------------- ")
       escreval ("                      Sequência de Quadrados Perfeitos    ")
       escreval ("                 ---------------------------------------- ")
    fimse
+
    se (opcao = 6) entao
       escreval ("                 -----------------------------------------")
       escreval ("                         Sequência de Cubos               ")
       escreval ("                 -----------------------------------------")
    fimse
+
    se (opcao = 7) entao
       escreval ("                 -----------------------------------------")
       escreval ("                         Sequência Geométrica             ")
       escreval ("                 -----------------------------------------")
    fimse
+
    se (opcao = 8) entao
       escreval ("                 -----------------------------------------")
       escreval ("                         Sequência Alternada              ")
       escreval ("                 -----------------------------------------")
    fimse
+
    se (opcao = 9) entao
       escreval ("                 ---------------------------------------- ")
       escreval ("                         Sequência de Tribonacci          ")
       escreval ("                 ---------------------------------------- ")
    fimse
+
+   se (opcao = 10) entao
+      escreval("Projeto idealizado pelos alunos:")
+      escreval("")
+      escreval("Anna Carolina Oliveira")
+      escreval("Cauã Mohor Pardini")
+      escreval("Fagner Louis Silva Nascimento")
+      escreval("Flavio Pereira de Almeida Junior")
+      escreval("John Henri Claudino dos Santos")
+      escreval("Lucas Castro dos Santos")
+      escreval("Luiz Gustavo dos Santos Oliveira")
+      escreval("Richard Jhonatan Viana Rangel")
+      escreval("")
+      escreval("Curso: Banco de Dados 2025-1")
+      escreval("")
+      escreval("FATEC Prof. Jessen Vidal")
+   fimse
+
    se (opcao = 0) entao
       escreva ("Encerrando programa...")
    fimse
    //mesclando condicionais com operadores
-   se (opcao < 0) ou (opcao >=10) entao
+   se (opcao < 0) ou (opcao >10) entao
       escreval ("                ------------------------------------------")
       escreval ("                |            Comando Inválido !!         |")
       escreval ("                ------------------------------------------")
