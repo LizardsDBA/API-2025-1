@@ -1,11 +1,32 @@
 Algoritmo "Menu API"
-// Disciplina: API
-// Alunos: Anna Carolina, Cauã Mohor, Fagner Louis, Flavio Pereira, John Henri, Lucas Castro, Luiz Gustavo, Richard Jhonatan
-// Curso: Banco de Dados 2025-1
+// Curso        : Banco de Dados 2025-1
+
+// Disciplina   : Algoritmos
+//                Arquitetura e Organização de Computadores
+//                Laboratório de Desenvolvimento em Banco de Dados
+
+// Professor   :  Fabiano Sabha Walczak
+//                Leonidas Lopes de Melo
+
+// Descrição   :  Programa criado para  teste de sequências matemáticas.
+
+// Nome do grupo: Lizards.DBA
+
+// Autor(a)    :  Anna Caroline
+//                Cauã Mohor Pardini
+//                Fagner Louis Silva Nascimento
+//                Flavio Pereira de Almeida Junior
+//                John Henri Claudino dos Santos
+//                Lucas Castro dos Santos
+//                Luiz Gustavo dos Santos OLiveira
+//                Richard Jhonatan Viana Rangel
+
+// Data        :  24/02/2025 -
 
 Var   //Declarando variavel para ser lida
 
-   opcao, enter : inteiro
+   opcao: inteiro
+   nome : caractere
 
 
 Inicio
@@ -15,8 +36,10 @@ Inicio
    escreval("-Calculadora de Operações Matemáticas-")
    escreval("---------------------------------------")
    escreval("")
-   escreval("Pressione enter para continuar")
-   leia(enter)
+   escreval
+   escreval
+   escreva("Digite seu nome para continuar: ")
+   leia(nome)
    limpatela
 
 
@@ -24,7 +47,8 @@ Inicio
    escreval ("                Menu de Operações Matemáticas   ")
    escreval (" --------------------------------------------------------")
    //escreval para separar
-   escreval (" ")
+   escreval("        Olá, ", nome, "! Escolha uma opção para continuar:")
+   escreval
    //mostrando opções disponiveis
    escreval ("1- Sequência de Fibonacci")
    escreval ("2- Números Triangulares")
@@ -100,20 +124,25 @@ Inicio
    fimse
 
    se (opcao = 10) entao
-      escreval("Projeto idealizado pelos alunos:")
-      escreval("")
-      escreval("Anna Carolina Oliveira")
-      escreval("Cauã Mohor Pardini")
-      escreval("Fagner Louis Silva Nascimento")
-      escreval("Flavio Pereira de Almeida Junior")
-      escreval("John Henri Claudino dos Santos")
-      escreval("Lucas Castro dos Santos")
-      escreval("Luiz Gustavo dos Santos Oliveira")
-      escreval("Richard Jhonatan Viana Rangel")
-      escreval("")
-      escreval("Curso: Banco de Dados 2025-1")
-      escreval("")
-      escreval("FATEC Prof. Jessen Vidal")
+      escreval("                         Equipe Técnica")
+      escreval("________________________________________________________________")
+      escreval("                         Product Owner")
+      escreval("              Anna Carolina de Oliveira Vale Mendes")
+      escreval
+      escreval("                         Scrum Master")
+      escreval("                 Fagner Louis Silva Nascimento")
+      escreval
+      escreval("                         DevOps Team")
+      escreval("                      Cauã Mohor Pardini")
+      escreval("                Flavio Pereira de Almeida Junior")
+      escreval("                 John Henri Claudino dos Santos")
+      escreval ("                    Lucas Castro dos Santos")
+      escreval("                Luiz Gustavo dos Santos OLiveira")
+      escreval("                 Richard Jhonatan Viana Rangel")
+      escreval
+      escreval("                     FATEC Prof. Jessen Vidal")
+      escreval
+      escreval("                Programa idealizado por LIZARDS.DBA")
    fimse
 
    se (opcao = 0) entao
