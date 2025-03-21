@@ -79,29 +79,32 @@ Inicio
       escreval ("------------------------------------------")
       escreval ("        Números Triangulares              ")
       escreval ("------------------------------------------")
+
+      escreva("Digite um número: ")
+      leia(input)
+
+      // Inicializa a SOMA
+      soma <- 0
+      i <- 1
+
+      // Soma sucessivamente os números até alcançar ou ultrapassar INPUT
+      enquanto soma < input faca
+         soma <- soma + i
+         i <- i + 1
+      fimenquanto
+
+      // Verifica se o número é triangular
+      se soma = input entao
+         escreval
+         escreva(input, " é um número triangular.")
+         escreval
+      senao
+         escreva(input, " não é um número triangular.")
+         escreval
+      fimse
+
    fimse
-   escreva("Digite um número: ")
-   leia(input)
 
-   // Inicializa a SOMA
-   soma <- 0
-   i <- 1
-
-   // Soma sucessivamente os números até alcançar ou ultrapassar INPUT
-   enquanto soma < input faca
-      soma <- soma + i
-      i <- i + 1
-   fimenquanto
-
-   // Verifica se o número é triangular
-   se soma = input entao
-      escreval
-      escreva(input, " é um número triangular.")
-      escreval
-   senao
-      escreva(input, " não é um número triangular.")
-      escreval
-   fimse
 
    se (opcao = 3) entao
       escreval ("------------------------------------------")
