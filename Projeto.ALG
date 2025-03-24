@@ -2,18 +2,18 @@ Algoritmo "Menu API"
 // Curso        : Banco de Dados 2025-1
 
 // Disciplina   : Algoritmos
-//                Arquitetura e Organiza??o de Computadores
-//                Laborat?rio de Desenvolvimento em Banco de Dados
+//                Arquitetura e Organizacao de Computadores
+//                Laboratorio de Desenvolvimento em Banco de Dados
 
 // Professor   :  Fabiano Sabha Walczak
 //                Leonidas Lopes de Melo
 
-// Descri??o   :  Programa criado para  teste de sequ?ncias matem?ticas.
+// Descricao   :  Programa criado para  teste de sequencias matematicas.
 
 // Nome do grupo: Lizards.DBA
 
 // Autor(a)    :  Anna Caroline
-//                Cau? Mohor Pardini
+//                Caua Mohor Pardini
 //                Fagner Louis Silva Nascimento
 //                Flavio Pereira de Almeida Junior
 //                John Henri Claudino dos Santos
@@ -34,9 +34,9 @@ Var   //Declarando variavel para ser lida
 
 Inicio
 
-   //criando menu para as opera??es
+   //criando menu para as operacoes
    escreval("-----------Projeto API 2025-1----------")
-   escreval("-Calculadora de Opera??es Matem?ticas-")
+   escreval("-Calculadora de Operacoes Matematicas-")
    escreval("---------------------------------------")
    escreval("")
    escreval
@@ -47,26 +47,26 @@ Inicio
 
 
    escreval (" --------------------------------------------------------")
-   escreval ("                Menu de Opera??es Matem?ticas   ")
+   escreval ("                Menu de Operacoes Matematicas   ")
    escreval (" --------------------------------------------------------")
    //escreval para separar
-   escreval("        Ol?, ", nome, "! Escolha uma op??o para continuar:")
+   escreval("        Ola, ", nome, "! Escolha uma opcao para continuar:")
    escreval
-   //mostrando op??es disponiveis
-   escreval ("1- Sequ?ncia de Fibonacci")
-   escreval ("2- N?meros Triangulares")
-   escreval ("3- Sequ?ncia de N?meros Primos")
-   escreval ("4- Sequ?ncia Fatorial")
-   escreval ("5- Sequ?ncia de Quadrados Perfeitos")
-   escreval ("6- Sequ?ncia de Cubos")
-   escreval ("7- Sequ?ncia Geom?trica")
-   escreval ("8- Sequ?ncia Alternada")
-   escreval ("9- Sequ?ncia de Tribonacci")
-   escreval ("10 - Informa??es do Projeto")
+   //mostrando opcoes disponiveis
+   escreval ("1- Sequencia de Fibonacci")
+   escreval ("2- Numeros Triangulares")
+   escreval ("3- Sequencia de Numeros Primos")
+   escreval ("4- Sequencia Fatorial")
+   escreval ("5- Sequencia de Quadrados Perfeitos")
+   escreval ("6- Sequencia de Cubos")
+   escreval ("7- Sequencia Geometrica")
+   escreval ("8- Sequencia Alternada")
+   escreval ("9- Sequencia de Tribonacci")
+   escreval ("10 - Informacoes do Projeto")
    escreval ("0- Fechar")
    escreval (" ")
-   escreval(" Escolha uma opera??o: ")
-   //ler variavel para intera??o do usuario com o menu
+   escreval(" Escolha uma operacao: ")
+   //ler variavel para interacao do usuario com o menu
    leia (opcao)
    //direcionando o usuario para opera??o escolhida
    limpatela
@@ -74,35 +74,35 @@ Inicio
    //utilizando estrutura condicional
    se (opcao = 1) entao
       escreval ("------------------------------------------")
-      escreval ("        Sequ?ncia de Fibonacci            ")
+      escreval ("        Sequencia de Fibonacci            ")
       escreval ("------------------------------------------")
    fimse
 
    se (opcao = 2) entao
       escreval ("------------------------------------------")
-      escreval ("        N?meros Triangulares              ")
+      escreval ("        Numeros Triangulares              ")
       escreval ("------------------------------------------")
 
-      escreva("Digite um n?mero: ")
+      escreva("Digite um numero: ")
       leia(input)
 
       // Inicializa a SOMA
       soma <- 0
       i <- 1
 
-      // Soma sucessivamente os n?meros at? alcan?ar ou ultrapassar INPUT
+      // Soma sucessivamente os numeros ate alcancar ou ultrapassar INPUT
       enquanto soma < input faca
          soma <- soma + i
          i <- i + 1
       fimenquanto
 
-      // Verifica se o n?mero ? triangular
+      // Verifica se o numero e triangular
       se soma = input entao
          escreval
-         escreva(input, " ? um n?mero triangular.")
+         escreva(input, " e um numero triangular.")
          escreval
       senao
-         escreva(input, " n?o ? um n?mero triangular.")
+         escreva(input, " nao e um numero triangular.")
          escreval
       fimse
 
@@ -111,13 +111,13 @@ Inicio
 
    se (opcao = 3) entao
       escreval ("------------------------------------------")
-      escreval ("        Sequ?ncia de N?meros Primos       ")
+      escreval ("        Sequencia de Numeros Primos       ")
       escreval ("------------------------------------------")
    fimse
 
    se (opcao = 4) entao
       escreval ("-----------------------------------------")
-      escreval ("        Sequ?ncia Fatorial               ")
+      escreval ("        Sequencia Fatorial               ")
       escreval ("-----------------------------------------")
 
       repita
@@ -146,9 +146,9 @@ Inicio
          escreva ("----------------------------------------------------------------")
          escreval(" ")
          escreval(" ")
-         escreval("O valor fatorial de ", NumeroDesejado, " é igual a: ", Fatorial)
+         escreval("O valor fatorial de ", NumeroDesejado, " e igual a: ", Fatorial)
          escreval(" ")
-         escreva ("Deseja fazer outro cálculo ? [S/N] ")
+         escreva ("Deseja fazer outro calculo ? [S/N] ")
          leia (Resposta)
          limpatela
       ate(Resposta = "N") OU (Resposta = "n")
@@ -157,36 +157,36 @@ Inicio
 
    se (opcao = 5) entao
       escreval ("---------------------------------------- ")
-      escreval ("     Sequ?ncia de Quadrados Perfeitos    ")
+      escreval ("     Sequencia de Quadrados Perfeitos    ")
       escreval ("---------------------------------------- ")
    fimse
 
    se (opcao = 6) entao
       escreval ("-----------------------------------------")
-      escreval ("        Sequ?ncia de Cubos               ")
+      escreval ("        Sequencia de Cubos               ")
       escreval ("-----------------------------------------")
    fimse
 
    se (opcao = 7) entao
       escreval ("-----------------------------------------")
-      escreval ("        Sequ?ncia Geom?trica             ")
+      escreval ("        Sequencia Geom?trica             ")
       escreval ("-----------------------------------------")
    fimse
 
    se (opcao = 8) entao
       escreval ("-----------------------------------------")
-      escreval ("        Sequ?ncia Alternada              ")
+      escreval ("        Sequencia Alternada              ")
       escreval ("-----------------------------------------")
    fimse
 
    se (opcao = 9) entao
       escreval ("---------------------------------------- ")
-      escreval ("        Sequ?ncia de Tribonacci          ")
+      escreval ("        Sequencia de Tribonacci          ")
       escreval ("---------------------------------------- ")
    fimse
 
    se (opcao = 10) entao
-      escreval("                         Equipe T?cnica")
+      escreval("                         Equipe Tecnica")
       escreval("________________________________________________________________")
       escreval("                         Product Owner")
       escreval("              Anna Carolina de Oliveira Vale Mendes")
@@ -195,7 +195,7 @@ Inicio
       escreval("                 Fagner Louis Silva Nascimento")
       escreval
       escreval("                         DevOps Team")
-      escreval("                      Cau? Mohor Pardini")
+      escreval("                      Caua Mohor Pardini")
       escreval("                Flavio Pereira de Almeida Junior")
       escreval("                 John Henri Claudino dos Santos")
       escreval ("                    Lucas Castro dos Santos")
@@ -213,7 +213,7 @@ Inicio
    //mesclando condicionais com operadores
    se (opcao < 0) ou (opcao >10) entao
       escreval ("------------------------------------------")
-      escreval ("|            Comando Inv?lido !!         |")
+      escreval ("|            Comando Invalido !!         |")
       escreval ("------------------------------------------")
       escreval (" ")
       escreval ("            Volte para o Menu")
