@@ -31,6 +31,13 @@ Var   //Declarando variavel para ser lida
    Contador, NumeroDesejado, Fatorial : inteiro
    Resposta: caractere
 
+   //SEQUENCIA ALTERNADA
+
+   SeqAlter : real
+
+   numN, limite, cont: inteiro
+
+
 
 Inicio
 
@@ -106,7 +113,15 @@ Inicio
          escreval
       fimse
 
+      repita
+         escreval
+         escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
+         leia (Resposta)
+         limpatela
+      ate(Resposta = "N") OU (Resposta = "n")
+
    fimse
+
 
 
    se (opcao = 3) entao
@@ -148,7 +163,7 @@ Inicio
          escreval(" ")
          escreval("O valor fatorial de ", NumeroDesejado, " e igual a: ", Fatorial)
          escreval(" ")
-         escreva ("Deseja fazer outro calculo ? [S/N] ")
+         escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
          leia (Resposta)
          limpatela
       ate(Resposta = "N") OU (Resposta = "n")
@@ -177,6 +192,45 @@ Inicio
       escreval ("-----------------------------------------")
       escreval ("        Sequencia Alternada              ")
       escreval ("-----------------------------------------")
+
+      //Menu para inserção da variavél "N"
+      //Definição do limite para análise da sequência
+      Escreval("Digite um número para váriavel N: ")
+      leia(numN)
+      Escreval("Digite um limite para conhecer a Sequência Alternada: ")
+      leia(limite)
+      escreval
+      limpatela
+
+
+      cont <-1
+
+
+      //Sistema de repetições para mostrar todas as variações da sequência alternada
+      escreval ("Sua sequência alternada é: ")
+      escreval
+      Enquanto (cont <= limite) faca
+
+         //Formula (-1)^N * Bn, onde o primeiro termo (-1)^N é constante, apenas
+         //o Bn é variável.
+         SeqAlter <- (((-1)^(numN))*((numN)^(2)))
+         numN <- numN + 1
+         cont <- cont + 1
+
+         escreva (SeqAlter)
+
+
+      fimenquanto
+
+      repita
+
+         escreval("")
+         escreval("")
+         escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
+         leia (Resposta)
+         limpatela
+      ate(Resposta = "N") OU (Resposta = "n")
+
    fimse
 
    se (opcao = 9) entao
