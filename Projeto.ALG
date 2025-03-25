@@ -25,19 +25,9 @@ Algoritmo "Menu API"
 
 Var   //Declarando variavel para ser lida
 
-   opcao, i, soma, input : inteiro
-   nome : caractere
-
-   Contador, NumeroDesejado, Fatorial : real
-   Resposta: caractere
-
-   //SEQUENCIA ALTERNADA
-
-   SeqAlter : real
-
-   numN, limite, cont: inteiro
-
-
+   i, input, input2 : inteiro
+   nome, resposta : caractere
+   fatorial, seqAlter : real
 
 Inicio
 
@@ -74,121 +64,90 @@ Inicio
    escreval (" ")
    escreval(" Escolha uma operacao: ")
    //ler variavel para interacao do usuario com o menu
-   leia (opcao)
+   leia (input)
    //direcionando o usuario para opera??o escolhida
    limpatela
 
    //utilizando estrutura condicional
-   se (opcao = 1) entao
+   se (input = 1) entao
       escreval ("------------------------------------------")
       escreval ("        Sequencia de Fibonacci            ")
       escreval ("------------------------------------------")
    fimse
 
-   se (opcao = 2) entao
+   se (input = 2) entao
       escreval ("------------------------------------------")
       escreval ("        Numeros Triangulares              ")
       escreval ("------------------------------------------")
-
-      escreva("Digite um numero: ")
-      leia(input)
-
-      // Inicializa a SOMA
-      soma <- 0
-      i <- 1
-
-      // Soma sucessivamente os numeros ate alcancar ou ultrapassar INPUT
-      enquanto soma < input faca
-         soma <- soma + i
-         i <- i + 1
-      fimenquanto
-
-      // Verifica se o numero e triangular
-      se soma = input entao
-         escreval
-         escreva(input, " e um numero triangular.")
-         escreval
-      senao
-         escreva(input, " nao e um numero triangular.")
-         escreval
-      fimse
-
-      repita
-         escreval
-         escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
-         leia (Resposta)
-         limpatela
-      ate(Resposta = "N") OU (Resposta = "n")
-
    fimse
 
 
 
-   se (opcao = 3) entao
+   se (input = 3) entao
       escreval ("------------------------------------------")
       escreval ("        Sequencia de Numeros Primos       ")
       escreval ("------------------------------------------")
    fimse
 
-   se (opcao = 4) entao
+   se (input = 4) entao
       escreval ("-----------------------------------------")
       escreval ("        Sequencia Fatorial               ")
       escreval ("-----------------------------------------")
 
       repita
          escreva("Digite o numero desejado: ")
-         leia (NumeroDesejado)
-         Contador <- NumeroDesejado
-         Fatorial <- 1
+         leia (input)
+         i <- input
+         fatorial <- 1
          escreval("----------------------------------------------------------------")
 
 
          repita
 
-            se Contador > 1 entao
-               escreva (Contador, " x")
+            se i > 1 entao
+               escreva (i, " x")
 
-               Fatorial <- Fatorial * Contador
-               Contador <- Contador - 1
+               fatorial <- fatorial * i
+               i <- i - 1
             senao
-               escreva (Contador)
+               escreva (i)
 
-               Fatorial <- Fatorial * Contador
-               Contador <- Contador - 1
+               fatorial <- fatorial * i
+               i <- i - 1
             fimse
-         ate (Contador = 0)
+         ate (i = 0)
          escreval(" ")
          escreva ("----------------------------------------------------------------")
          escreval(" ")
          escreval(" ")
-         escreval("O valor fatorial de ", NumeroDesejado, " e igual a: ", Fatorial)
+         escreval("O valor fatorial de ", input, " e igual a: ", fatorial)
          escreval(" ")
          escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
-         leia (Resposta)
+         leia (resposta)
          limpatela
-      ate(Resposta = "N") OU (Resposta = "n")
+      ate(resposta = "N") OU (resposta = "n")
 
    fimse
 
-   se (opcao = 5) entao
+   se (input = 5) entao
       escreval ("---------------------------------------- ")
       escreval ("     Sequencia de Quadrados Perfeitos    ")
       escreval ("---------------------------------------- ")
    fimse
 
-   se (opcao = 6) entao
+   se (input = 6) entao
       escreval ("-----------------------------------------")
       escreval ("        Sequencia de Cubos               ")
       escreval ("-----------------------------------------")
    fimse
 
-   se (opcao = 7) entao
+   se (input = 7) entao
       escreval ("-----------------------------------------")
       escreval ("        Sequencia Geom?trica             ")
       escreval ("-----------------------------------------")
    fimse
 
-   se (opcao = 8) entao
+   se (input = 8) entao
       escreval ("-----------------------------------------")
       escreval ("        Sequencia Alternada              ")
       escreval ("-----------------------------------------")
@@ -196,28 +155,28 @@ Inicio
       //Menu para inserção da variavél "N"
       //Definição do limite para análise da sequência
       Escreval("Digite um número para váriavel N: ")
-      leia(numN)
+      leia(input)
       Escreval("Digite um limite para conhecer a Sequência Alternada: ")
-      leia(limite)
+      leia(input2)
       escreval
       limpatela
 
 
-      cont <-1
+      i <-1
 
 
       //Sistema de repetições para mostrar todas as variações da sequência alternada
       escreval ("Sua sequência alternada é: ")
       escreval
-      Enquanto (cont <= limite) faca
+      Enquanto (i <= input2) faca
 
          //Formula (-1)^N * Bn, onde o primeiro termo (-1)^N é constante, apenas
          //o Bn é variável.
-         SeqAlter <- (((-1)^(numN))*((numN)^(2)))
-         numN <- numN + 1
-         cont <- cont + 1
+         seqAlter <- (((-1)^(input))*((input)^(2)))
+         input <- input + 1
+         i <- i + 1
 
-         escreva (SeqAlter)
+         escreva (seqAlter)
 
 
       fimenquanto
@@ -227,19 +186,19 @@ Inicio
          escreval("")
          escreval("")
          escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
-         leia (Resposta)
+         leia (resposta)
          limpatela
-      ate(Resposta = "N") OU (Resposta = "n")
+      ate(resposta = "N") OU (resposta = "n")
 
    fimse
 
-   se (opcao = 9) entao
+   se (input = 9) entao
       escreval ("---------------------------------------- ")
       escreval ("        Sequencia de Tribonacci          ")
       escreval ("---------------------------------------- ")
    fimse
 
-   se (opcao = 10) entao
+   se (input = 10) entao
       escreval("                         Equipe Tecnica")
       escreval("________________________________________________________________")
       escreval("                         Product Owner")
@@ -261,11 +220,11 @@ Inicio
       escreval("                Programa idealizado por LIZARDS.DBA")
    fimse
 
-   se (opcao = 0) entao
+   se (input = 0) entao
       escreva ("Encerrando programa...")
    fimse
    //mesclando condicionais com operadores
-   se (opcao < 0) ou (opcao >10) entao
+   se (input < 0) ou (input >10) entao
       escreval ("------------------------------------------")
       escreval ("|            Comando Invalido !!         |")
       escreval ("------------------------------------------")
