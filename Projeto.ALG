@@ -28,7 +28,7 @@ Var   //Declarando variavel para ser lida
    opcao, i, soma, input : inteiro
    nome : caractere
 
-   Contador, NumeroDesejado, Fatorial : inteiro
+   Contador, NumeroDesejado, Fatorial : real
    Resposta: caractere
 
    //SEQUENCIA ALTERNADA
