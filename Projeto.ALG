@@ -25,7 +25,7 @@ Algoritmo "Menu API"
 
 Var   //Declarando variavel para ser lida
 
-   i, input, input2 : inteiro
+   i, input, input2, menu : inteiro
    nome, resposta : caractere
    sequencia : real
 
@@ -64,32 +64,53 @@ Inicio
    escreval (" ")
    escreval(" Escolha uma operacao: ")
    //ler variavel para interacao do usuario com o menu
-   leia (input)
+   leia (menu)
    //direcionando o usuario para opera??o escolhida
    limpatela
 
    //utilizando estrutura condicional
-   se (input = 1) entao
+   se (menu = 1) entao
       escreval ("------------------------------------------")
       escreval ("        Sequencia de Fibonacci            ")
       escreval ("------------------------------------------")
    fimse
 
-   se (input = 2) entao
-      escreval ("------------------------------------------")
-      escreval ("        Numeros Triangulares              ")
-      escreval ("------------------------------------------")
+   se (menu = 2) entao
+      escreval ("-----------------------------------------")
+      escreval ("        Números Triangulares             ")
+      escreval ("-----------------------------------------")
+
+      repita
+         escreva("Digite a quantidade de termos desejada: ")
+         leia (input)
+         escreval("----------------------------------------------------------------")
+
+         escreva("Sequência: ")
+         para i <- 1 ate input faca
+            sequencia <- i * (i + 1) / 2
+            escreva(sequencia, " ")
+         fimpara
+
+         escreval(" ")
+         escreva("----------------------------------------------------------------")
+         escreval(" ")
+         escreval("Foram gerados ", input, " números triangulares.")
+         escreval(" ")
+         escreva(nome, ", deseja fazer outro cálculo? [S/N] ")
+         leia(resposta)
+         limpatela
+      ate (resposta = "N") ou (resposta = "n")
    fimse
 
 
 
-   se (input = 3) entao
+   se (menu = 3) entao
       escreval ("------------------------------------------")
       escreval ("        Sequencia de Numeros Primos       ")
       escreval ("------------------------------------------")
    fimse
 
-   se (input = 4) entao
+   se (menu = 4) entao
       escreval ("-----------------------------------------")
       escreval ("        Sequencia Fatorial               ")
       escreval ("-----------------------------------------")
@@ -120,7 +141,7 @@ Inicio
          escreva ("----------------------------------------------------------------")
          escreval(" ")
          escreval(" ")
-         escreval("O valor fatorial de ", input, " e igual a: ", sequencia)
+         escreval("O valor fatorial de ", input, "! e igual a: ", sequencia)
          escreval(" ")
          escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
          leia (resposta)
@@ -129,25 +150,25 @@ Inicio
 
    fimse
 
-   se (input = 5) entao
+   se (menu = 5) entao
       escreval ("---------------------------------------- ")
       escreval ("     Sequencia de Quadrados Perfeitos    ")
       escreval ("---------------------------------------- ")
    fimse
 
-   se (input = 6) entao
+   se (menu = 6) entao
       escreval ("-----------------------------------------")
       escreval ("        Sequencia de Cubos               ")
       escreval ("-----------------------------------------")
    fimse
 
-   se (input = 7) entao
+   se (menu = 7) entao
       escreval ("-----------------------------------------")
       escreval ("        Sequencia Geom?trica             ")
       escreval ("-----------------------------------------")
    fimse
 
-   se (input = 8) entao
+   se (menu = 8) entao
       escreval ("-----------------------------------------")
       escreval ("        Sequencia Alternada              ")
       escreval ("-----------------------------------------")
@@ -192,13 +213,13 @@ Inicio
 
    fimse
 
-   se (input = 9) entao
+   se (menu = 9) entao
       escreval ("---------------------------------------- ")
       escreval ("        Sequencia de Tribonacci          ")
       escreval ("---------------------------------------- ")
    fimse
 
-   se (input = 10) entao
+   se (menu = 10) entao
       escreval("                         Equipe Tecnica")
       escreval("________________________________________________________________")
       escreval("                         Product Owner")
@@ -220,7 +241,7 @@ Inicio
       escreval("                Programa idealizado por LIZARDS.DBA")
    fimse
 
-   se (input = 0) entao
+   se (menu = 0) entao
       escreva ("Encerrando programa...")
    fimse
    //mesclando condicionais com operadores
