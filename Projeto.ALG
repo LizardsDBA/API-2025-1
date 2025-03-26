@@ -27,7 +27,7 @@ Var   //Declarando variavel para ser lida
 
    i, input, input2 : inteiro
    nome, resposta : caractere
-   fatorial, seqAlter : real
+   sequencia : real
 
 Inicio
 
@@ -98,7 +98,7 @@ Inicio
          escreva("Digite o numero desejado: ")
          leia (input)
          i <- input
-         fatorial <- 1
+         sequencia <- 1
          escreval("----------------------------------------------------------------")
 
 
@@ -107,12 +107,12 @@ Inicio
             se i > 1 entao
                escreva (i, " x")
 
-               fatorial <- fatorial * i
+               sequencia <- sequencia * i
                i <- i - 1
             senao
                escreva (i)
 
-               fatorial <- fatorial * i
+               sequencia <- sequencia * i
                i <- i - 1
             fimse
          ate (i = 0)
@@ -120,7 +120,7 @@ Inicio
          escreva ("----------------------------------------------------------------")
          escreval(" ")
          escreval(" ")
-         escreval("O valor fatorial de ", input, " e igual a: ", fatorial)
+         escreval("O valor fatorial de ", input, " e igual a: ", sequencia)
          escreval(" ")
          escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
          leia (resposta)
@@ -172,11 +172,11 @@ Inicio
 
          //Formula (-1)^N * Bn, onde o primeiro termo (-1)^N é constante, apenas
          //o Bn é variável.
-         seqAlter <- (((-1)^(input))*((input)^(2)))
+         sequencia <- (((-1)^(input))*((input)^(2)))
          input <- input + 1
          i <- i + 1
 
-         escreva (seqAlter)
+         escreva (sequencia)
 
 
       fimenquanto
