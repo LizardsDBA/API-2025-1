@@ -76,11 +76,13 @@ Inicio
    fimse
 
    se (menu = 2) entao
-      escreval ("-----------------------------------------")
-      escreval ("        Números Triangulares             ")
-      escreval ("-----------------------------------------")
 
       repita
+
+         escreval ("-----------------------------------------")
+         escreval ("        Números Triangulares             ")
+         escreval ("-----------------------------------------")
+
          escreva("Digite a quantidade de termos desejada: ")
          leia (input)
          escreval("----------------------------------------------------------------")
@@ -111,11 +113,13 @@ Inicio
    fimse
 
    se (menu = 4) entao
-      escreval ("-----------------------------------------")
-      escreval ("        Sequencia Fatorial               ")
-      escreval ("-----------------------------------------")
 
       repita
+
+         escreval ("-----------------------------------------")
+         escreval ("        Sequencia Fatorial               ")
+         escreval ("-----------------------------------------")
+
          escreva("Digite o numero desejado: ")
          leia (input)
          i <- input
@@ -169,45 +173,52 @@ Inicio
    fimse
 
    se (menu = 8) entao
-      escreval ("-----------------------------------------")
-      escreval ("        Sequencia Alternada              ")
-      escreval ("-----------------------------------------")
-
-      //Menu para inserção da variavél "N"
-      //Definição do limite para análise da sequência
-      Escreval("Digite um número para váriavel N: ")
-      leia(input)
-      Escreval("Digite um limite para conhecer a Sequência Alternada: ")
-      leia(input2)
-      escreval
-      limpatela
-
-
-      i <-1
-
-
-      //Sistema de repetições para mostrar todas as variações da sequência alternada
-      escreval ("Sua sequência alternada é: ")
-      escreval
-      Enquanto (i <= input2) faca
-
-         //Formula (-1)^N * Bn, onde o primeiro termo (-1)^N é constante, apenas
-         //o Bn é variável.
-         sequencia <- (((-1)^(input))*((input)^(2)))
-         input <- input + 1
-         i <- i + 1
-
-         escreva (sequencia)
-
-
-      fimenquanto
 
       repita
 
+         escreval ("-----------------------------------------")
+         escreval ("        Sequencia Alternada              ")
+         escreval ("-----------------------------------------")
+
+         //Menu para inserção da variavél "N"
+         //Definição do limite para análise da sequência
+         escreval("")
+         Escreval("Digite um número para váriavel N: ")
+         leia(input)
+         Escreval("Digite um limite para conhecer a Sequência Alternada: ")
+         leia(input2)
+         limpatela
+
+
+         i <-1
+
+
+         //Sistema de repetições para mostrar todas as variações da sequência alternada
+         escreval("Sua sequência alternada é: ")
+         escreval("")
+         escreval("-----------------------------------------------------------------")
+         Enquanto (i <= input2) faca
+
+            //Formula (-1)^N * Bn, onde o primeiro termo (-1)^N é constante, apenas
+            //o Bn é variável.
+            sequencia <- (((-1)^(input))*((input)^(2)))
+            input <- input + 1
+            i <- i + 1
+
+
+
+            escreva (sequencia)
+            
+
+
+
+         fimenquanto
+         escreval("")
+         escreval("-----------------------------------------------------------------")
          escreval("")
          escreval("")
-         escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
-         leia (resposta)
+         escreva(nome, ", Deseja fazer outro calculo ? [S/N] ")
+         leia(resposta)
          limpatela
       ate(resposta = "N") OU (resposta = "n")
 
