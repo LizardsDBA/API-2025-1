@@ -77,7 +77,7 @@ Inicio
 
    se (menu = 2) entao
 
-      repita
+      //repita
 
          escreval ("-----------------------------------------")
          escreval ("        Números Triangulares             ")
@@ -98,10 +98,10 @@ Inicio
          escreval(" ")
          escreval("Foram gerados ", input, " números triangulares.")
          escreval(" ")
-         escreva(nome, ", deseja fazer outro cálculo? [S/N] ")
-         leia(resposta)
-         limpatela
-      ate (resposta = "N") ou (resposta = "n")
+         //escreva(nome, ", deseja fazer outro cálculo? [S/N] ")
+         //leia(resposta)
+         //limpatela
+      //ate (resposta = "N") ou (resposta = "n")
    fimse
 
 
@@ -114,7 +114,7 @@ Inicio
 
    se (menu = 4) entao
 
-      repita
+      //repita
 
          escreval ("-----------------------------------------")
          escreval ("        Sequencia Fatorial               ")
@@ -147,10 +147,10 @@ Inicio
          escreval(" ")
          escreval("O valor fatorial de ", input, "! e igual a: ", sequencia)
          escreval(" ")
-         escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
-         leia (resposta)
-         limpatela
-      ate(resposta = "N") OU (resposta = "n")
+        // escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
+        // leia (resposta)
+        // limpatela
+     // ate(resposta = "N") OU (resposta = "n")
 
    fimse
 
@@ -174,7 +174,7 @@ Inicio
 
    se (menu = 8) entao
 
-      repita
+     // repita
 
          escreval ("-----------------------------------------")
          escreval ("        Sequencia Alternada              ")
@@ -217,10 +217,10 @@ Inicio
          escreval("-----------------------------------------------------------------")
          escreval("")
          escreval("")
-         escreva(nome, ", Deseja fazer outro calculo ? [S/N] ")
-         leia(resposta)
-         limpatela
-      ate(resposta = "N") OU (resposta = "n")
+      //   escreva(nome, ", Deseja fazer outro calculo ? [S/N] ")
+       //  leia(resposta)
+       //  limpatela
+    //  ate(resposta = "N") OU (resposta = "n")
 
    fimse
 
@@ -256,7 +256,7 @@ Inicio
       escreva ("Encerrando programa...")
    fimse
    //mesclando condicionais com operadores
-   se (input < 0) ou (input >10) entao
+   se (menu < 0) ou (menu >10) entao
       escreval ("------------------------------------------")
       escreval ("|            Comando Invalido !!         |")
       escreval ("------------------------------------------")
