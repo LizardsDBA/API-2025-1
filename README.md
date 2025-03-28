@@ -20,6 +20,7 @@
 ♦ [Operações Disponíveis](#operações-disponíveis) <br />
 ♦ [Integrantes do projeto](#integrantes-do-projeto) <br />
 ♦ [Backlog do Produto](#backlog-do-produto) <br />
+♦ [Manual do Usuário](#manual-do-usuário) <br />
 ♦ [Validações feitas com o Cliente](#validações-feitas-com-o-cliente) <br />
 ♦ [Requisitos de Permanência](#requisitos-de-permanência) <br />
 ♦ [Tecnologias Utilizadas](#tecnologias-utilizadas) <br />
@@ -63,6 +64,9 @@
 | 3      | Backlog  | Sequência de Fibonacci                                  |Baixa |
 | 3      | Backlog  | Sequência de Cubos |Baixa|
 
+
+## Manual do Usuário
+<a href="https://manualapi.vercel.app/" target="_blank">♦ Manual do Usuário</a>
 
 ## Validações feitas com o Cliente
 
