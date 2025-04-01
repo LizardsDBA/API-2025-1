@@ -12,7 +12,7 @@ Algoritmo "Menu API"
 
 // Nome do grupo: Lizards.DBA
 
-// Autor(a)    :  Anna Caroline
+// Autor(a)    :  Anna Carolina de Oliveira Vale Mendes
 //                Caua Mohor Pardini
 //                Fagner Louis Silva Nascimento
 //                Flavio Pereira de Almeida Junior
@@ -80,14 +80,14 @@ Inicio
       //repita
 
          escreval ("-----------------------------------------")
-         escreval ("        Números Triangulares             ")
+         escreval ("        NÃºmeros Triangulares             ")
          escreval ("-----------------------------------------")
 
          escreva("Digite a quantidade de termos desejada: ")
          leia (input)
          escreval("----------------------------------------------------------------")
 
-         escreva("Sequência: ")
+         escreva("SequÃªncia: ")
          para i <- 1 ate input faca
             sequencia <- i * (i + 1) / 2
             escreva(sequencia, " ")
@@ -96,9 +96,9 @@ Inicio
          escreval(" ")
          escreva("----------------------------------------------------------------")
          escreval(" ")
-         escreval("Foram gerados ", input, " números triangulares.")
+         escreval("Foram gerados ", input, " nÃºmeros triangulares.")
          escreval(" ")
-         //escreva(nome, ", deseja fazer outro cálculo? [S/N] ")
+         //escreva(nome, ", deseja fazer outro cÃ¡lculo? [S/N] ")
          //leia(resposta)
          //limpatela
       //ate (resposta = "N") ou (resposta = "n")
@@ -180,12 +180,12 @@ Inicio
          escreval ("        Sequencia Alternada              ")
          escreval ("-----------------------------------------")
 
-         //Menu para inserção da variavél "N"
-         //Definição do limite para análise da sequência
+         //Menu para inserÃ§Ã£o da variavÃ©l "N"
+         //DefiniÃ§Ã£o do limite para anÃ¡lise da sequÃªncia
          escreval("")
-         Escreval("Digite um número para váriavel N: ")
+         Escreval("Digite um nÃºmero para vÃ¡riavel N: ")
          leia(input)
-         Escreval("Digite um limite para conhecer a Sequência Alternada: ")
+         Escreval("Digite um limite para conhecer a SequÃªncia Alternada: ")
          leia(input2)
          limpatela
 
@@ -193,14 +193,14 @@ Inicio
          i <-1
 
 
-         //Sistema de repetições para mostrar todas as variações da sequência alternada
-         escreval("Sua sequência alternada é: ")
+         //Sistema de repetiÃ§Ãµes para mostrar todas as variaÃ§Ãµes da sequÃªncia alternada
+         escreval("Sua sequÃªncia alternada Ã©: ")
          escreval("")
          escreval("-----------------------------------------------------------------")
          Enquanto (i <= input2) faca
 
-            //Formula (-1)^N * Bn, onde o primeiro termo (-1)^N é constante, apenas
-            //o Bn é variável.
+            //Formula (-1)^N * Bn, onde o primeiro termo (-1)^N Ã© constante, apenas
+            //o Bn Ã© variÃ¡vel.
             sequencia <- (((-1)^(input))*((input)^(2)))
             input <- input + 1
             i <- i + 1
