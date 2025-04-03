@@ -54,13 +54,13 @@
 | Sprint | Status | Descrição                                                             | Priorização |
 |--------|----|-----------------------------------------------------------------------|-------------|
 | 1,2 e 3      | Em andamento | Menu          |Alta  |
-| 1      | Em andamento  | Números Triangulares                                               |Alta  |
-| 1      | Em andamento  | Sequência Fatorial                                                 |Média |
-| 1      | Em andamento  | Sequência Alternada                                               |Alta |
+| 1      | Concluido  | Números Triangulares                                               |Alta  |
+| 1      | Concluido  | Sequência Fatorial                                                 |Média |
+| 1      | Concluido  | Sequência Alternada                                               |Alta |
 | 2      | Backlog  | Sequência Geométrica                                            |Alta |
-| 2      | Backlog | Sequência de Números Primos                  |Média|
-| 2      | Backlog  | Sequência de Quadrados Perfeitos                  |Baixa |
-| 3      | Backlog  | Sequência Tribonacci                       |Média |
+| 2      | Em andamento | Sequência de Números Primos                  |Média|
+| 2      | Em andamento  | Sequência de Quadrados Perfeitos                  |Baixa |
+| 3      | Em andamento  | Sequência Tribonacci                       |Média |
 | 3      | Backlog  | Sequência de Fibonacci                                  |Baixa |
 | 3      | Backlog  | Sequência de Cubos |Baixa|
 
