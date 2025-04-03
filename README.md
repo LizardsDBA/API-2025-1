@@ -54,9 +54,9 @@
 | Sprint | Status | Descrição                                                             | Priorização |
 |--------|----|-----------------------------------------------------------------------|-------------|
 | 1,2 e 3      | Em andamento | Menu          |Alta  |
-| 1      | Concluido:white_check_mark:  | Números Triangulares                                               |Alta  |
-| 1      | Concluido:white_check_mark:  | Sequência Fatorial                                                 |Média |
-| 1      | Concluido:white_check_mark:  | Sequência Alternada                                               |Alta |
+| 1      | Concluido :white_check_mark:  | Números Triangulares                                               |Alta  |
+| 1      | Concluido :white_check_mark:  | Sequência Fatorial                                                 |Média |
+| 1      | Concluido :white_check_mark:  | Sequência Alternada                                               |Alta |
 | 2      | Em andamento  | Sequência Geométrica                                            |Alta |
 | 2      | Em andamento | Sequência de Números Primos                  |Média|
 | 2      | Em andamento  | Sequência de Quadrados Perfeitos                  |Baixa |
