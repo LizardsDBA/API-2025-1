@@ -57,10 +57,10 @@
 | 1      | Concluido  | Números Triangulares                                               |Alta  |
 | 1      | Concluido  | Sequência Fatorial                                                 |Média |
 | 1      | Concluido  | Sequência Alternada                                               |Alta |
-| 2      | Backlog  | Sequência Geométrica                                            |Alta |
+| 2      | Em andamento  | Sequência Geométrica                                            |Alta |
 | 2      | Em andamento | Sequência de Números Primos                  |Média|
 | 2      | Em andamento  | Sequência de Quadrados Perfeitos                  |Baixa |
-| 3      | Em andamento  | Sequência Tribonacci                       |Média |
+| 3      | Backlog  | Sequência Tribonacci                       |Média |
 | 3      | Backlog  | Sequência de Fibonacci                                  |Baixa |
 | 3      | Backlog  | Sequência de Cubos |Baixa|
 
