@@ -25,9 +25,9 @@ Algoritmo "Menu API"
 
 Var   //Declarando variavel para ser lida
 
-   i, input, input2, menu : inteiro
+   i, input, input2, menu, termo : inteiro
    nome, resposta : caractere
-   sequencia : real
+   sequencia, razao, resultado, atual : real
 
 Inicio
 
@@ -65,7 +65,7 @@ Inicio
    escreval(" Escolha uma operacao: ")
    //ler variavel para interacao do usuario com o menu
    leia (menu)
-   //direcionando o usuario para opera??o escolhida
+   //direcionando o usuario para operacao escolhida
    limpatela
 
    //utilizando estrutura condicional
@@ -79,28 +79,28 @@ Inicio
 
       //repita
 
-         escreval ("-----------------------------------------")
-         escreval ("        Números Triangulares             ")
-         escreval ("-----------------------------------------")
+      escreval ("-----------------------------------------")
+      escreval ("        Numeros Triangulares             ")
+      escreval ("-----------------------------------------")
 
-         escreva("Digite a quantidade de termos desejada: ")
-         leia (input)
-         escreval("----------------------------------------------------------------")
+      escreva("Digite a quantidade de termos desejada: ")
+      leia (input)
+      escreval("----------------------------------------------------------------")
 
-         escreva("Sequência: ")
-         para i <- 1 ate input faca
-            sequencia <- i * (i + 1) / 2
-            escreva(sequencia, " ")
-         fimpara
+      escreva("Sequencia: ")
+      para i <- 1 ate input faca
+         sequencia <- i * (i + 1) / 2
+         escreva(sequencia, " ")
+      fimpara
 
-         escreval(" ")
-         escreva("----------------------------------------------------------------")
-         escreval(" ")
-         escreval("Foram gerados ", input, " números triangulares.")
-         escreval(" ")
-         //escreva(nome, ", deseja fazer outro cálculo? [S/N] ")
-         //leia(resposta)
-         //limpatela
+      escreval(" ")
+      escreva("----------------------------------------------------------------")
+      escreval(" ")
+      escreval("Foram gerados ", input, " numeros triangulares.")
+      escreval(" ")
+      //escreva(nome, ", deseja fazer outro calculo? [S/N] ")
+      //leia(resposta)
+      //limpatela
       //ate (resposta = "N") ou (resposta = "n")
    fimse
 
@@ -116,41 +116,41 @@ Inicio
 
       //repita
 
-         escreval ("-----------------------------------------")
-         escreval ("        Sequencia Fatorial               ")
-         escreval ("-----------------------------------------")
+      escreval ("-----------------------------------------")
+      escreval ("        Sequencia Fatorial               ")
+      escreval ("-----------------------------------------")
 
-         escreva("Digite o numero desejado: ")
-         leia (input)
-         i <- input
-         sequencia <- 1
-         escreval("----------------------------------------------------------------")
+      escreva("Digite o numero desejado: ")
+      leia (input)
+      i <- input
+      sequencia <- 1
+      escreval("----------------------------------------------------------------")
 
 
-         repita
+      repita
 
-            se i > 1 entao
-               escreva (i, " x")
+         se i > 1 entao
+            escreva (i, " x")
 
-               sequencia <- sequencia * i
-               i <- i - 1
-            senao
-               escreva (i)
+            sequencia <- sequencia * i
+            i <- i - 1
+         senao
+            escreva (i)
 
-               sequencia <- sequencia * i
-               i <- i - 1
-            fimse
-         ate (i = 0)
-         escreval(" ")
-         escreva ("----------------------------------------------------------------")
-         escreval(" ")
-         escreval(" ")
-         escreval("O valor fatorial de ", input, "! e igual a: ", sequencia)
-         escreval(" ")
-        // escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
-        // leia (resposta)
-        // limpatela
-     // ate(resposta = "N") OU (resposta = "n")
+            sequencia <- sequencia * i
+            i <- i - 1
+         fimse
+      ate (i = 0)
+      escreval(" ")
+      escreva ("----------------------------------------------------------------")
+      escreval(" ")
+      escreval(" ")
+      escreval("O valor fatorial de ", input, "! e igual a: ", sequencia)
+      escreval(" ")
+      // escreva (nome, ", Deseja fazer outro calculo ? [S/N] ")
+      // leia (resposta)
+      // limpatela
+      // ate(resposta = "N") OU (resposta = "n")
 
    fimse
 
@@ -168,59 +168,80 @@ Inicio
 
    se (menu = 7) entao
       escreval ("-----------------------------------------")
-      escreval ("        Sequencia Geom?trica             ")
+      escreval ("        Sequencia Geometrica             ")
       escreval ("-----------------------------------------")
+
+      escreva("Informe o primeiro termo da sequ�ncia: ")
+      leia(input)
+      escreva("Informe a raz�o: ")
+      leia(razao)
+      escreva("Informe o limite da sequ�ncia: ")
+      leia(termo)
+
+      atual <- input
+
+      para i de 1 ate termo faca
+
+
+         resultado <- input * (razao ^ i)
+
+         escreval(atual, " * ", razao, " = ", resultado)
+
+         atual <- resultado
+
+      fimPara
+
    fimse
 
    se (menu = 8) entao
 
-     // repita
+      // repita
 
-         escreval ("-----------------------------------------")
-         escreval ("        Sequencia Alternada              ")
-         escreval ("-----------------------------------------")
+      escreval ("-----------------------------------------")
+      escreval ("        Sequencia Alternada              ")
+      escreval ("-----------------------------------------")
 
-         //Menu para inserção da variavél "N"
-         //Definição do limite para análise da sequência
-         escreval("")
-         Escreval("Digite um número para váriavel N: ")
-         leia(input)
-         Escreval("Digite um limite para conhecer a Sequência Alternada: ")
-         leia(input2)
-         limpatela
-
-
-         i <-1
+      //Menu para inserir da variavel "N"
+      //Definicao do limite para analise da sequencia
+      escreval("")
+      Escreval("Digite um numero para variavel N: ")
+      leia(input)
+      Escreval("Digite um limite para conhecer a Sequencia Alternada: ")
+      leia(input2)
+      limpatela
 
 
-         //Sistema de repetições para mostrar todas as variações da sequência alternada
-         escreval("Sua sequência alternada é: ")
-         escreval("")
-         escreval("-----------------------------------------------------------------")
-         Enquanto (i <= input2) faca
-
-            //Formula (-1)^N * Bn, onde o primeiro termo (-1)^N é constante, apenas
-            //o Bn é variável.
-            sequencia <- (((-1)^(input))*((input)^(2)))
-            input <- input + 1
-            i <- i + 1
+      i <-1
 
 
+      //Sistema de repeticoes para mostrar todas as variavel da sequencia alternada
+      escreval("Sua sequencia alternada sao: ")
+      escreval("")
+      escreval("-----------------------------------------------------------------")
+      Enquanto (i <= input2) faca
 
-            escreva (sequencia)
-            
+         //Formula (-1)^N * Bn, onde o primeiro termo (-1)^ nao constante, apenas
+         //o Bn nao variavel.
+         sequencia <- (((-1)^(input))*((input)^(2)))
+         input <- input + 1
+         i <- i + 1
 
 
 
-         fimenquanto
-         escreval("")
-         escreval("-----------------------------------------------------------------")
-         escreval("")
-         escreval("")
+         escreva (sequencia)
+
+
+
+
+      fimenquanto
+      escreval("")
+      escreval("-----------------------------------------------------------------")
+      escreval("")
+      escreval("")
       //   escreva(nome, ", Deseja fazer outro calculo ? [S/N] ")
-       //  leia(resposta)
-       //  limpatela
-    //  ate(resposta = "N") OU (resposta = "n")
+      //  leia(resposta)
+      //  limpatela
+      //  ate(resposta = "N") OU (resposta = "n")
 
    fimse
 
