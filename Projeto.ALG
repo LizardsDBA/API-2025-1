@@ -25,7 +25,7 @@ Algoritmo "Menu API"
 
 Var   //Declarando variavel para ser lida
 
-   i, input, input2, menu, termo : inteiro
+   i, j, input, input2, menu, termo : inteiro
    nome, resposta : caractere
    sequencia, razao, resultado, atual : real
 
@@ -110,6 +110,35 @@ Inicio
       escreval ("------------------------------------------")
       escreval ("        Sequencia de Numeros Primos       ")
       escreval ("------------------------------------------")
+      
+      escreva("insira o ultimo numero da sequencia: ")
+      leia (input)
+      //insere o numero 2 na sequencia caso num seja maior que 1
+      se (input >= 2) entao
+         escreva("2")
+      fimse
+      //inicia o loop sequencia para mostrar os numeros ate o numero escolhido
+      para i de 2 ate input passo 1 faca
+         //filtra todos os numeros pra impares
+         se (i % 2 <> 0) entao
+            //incia o loop para verificar se o numero é primo
+            para j de 1 ate i passo 1 faca
+               se (i / j = i) entao
+
+               senao
+                  se (i % j = 0) e (i <> j) entao
+                     interrompa
+                  senao
+                     se (i / j = 1) entao
+                        escreva(i)
+                     senao
+
+                     fimse
+                  fimse
+               fimse
+            fimpara
+         fimse
+      fimpara
    fimse
 
    se (menu = 4) entao
