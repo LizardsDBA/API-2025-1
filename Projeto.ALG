@@ -110,7 +110,7 @@ Inicio
       escreval ("------------------------------------------")
       escreval ("        Sequencia de Numeros Primos       ")
       escreval ("------------------------------------------")
-      
+
       escreva("insira o ultimo numero da sequencia: ")
       leia (input)
       //insere o numero 2 na sequencia caso num seja maior que 1
@@ -187,6 +187,12 @@ Inicio
       escreval ("---------------------------------------- ")
       escreval ("     Sequencia de Quadrados Perfeitos    ")
       escreval ("---------------------------------------- ")
+      escreva("Insira o número limite da sequência: ")
+      leia(input)
+      para i de 1 ate input passo 1 faca
+         input <- i * i
+         escreval(i, " * ", i, " = ", input)
+      fimpara
    fimse
 
    se (menu = 6) entao
