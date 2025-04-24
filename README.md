@@ -57,9 +57,9 @@
 | 1      | Concluido :white_check_mark:  | Números Triangulares                                               |Alta  |
 | 1      | Concluido :white_check_mark:  | Sequência Fatorial                                                 |Média |
 | 1      | Concluido :white_check_mark:  | Sequência Alternada                                               |Alta |
-| 2      | Em andamento  | Sequência Geométrica                                            |Alta |
-| 2      | Em andamento | Sequência de Números Primos                  |Média|
-| 2      | Em andamento  | Sequência de Quadrados Perfeitos                  |Baixa |
+| 2      | Concluido :white_check_mark:  | Sequência Geométrica                                            |Alta |
+| 2      | Concluido :white_check_mark:  | Sequência de Números Primos                  |Média|
+| 2      | Concluido :white_check_mark:  | Sequência de Quadrados Perfeitos                  |Baixa |
 | 3      | Backlog  | Sequência Tribonacci                       |Média |
 | 3      | Backlog  | Sequência de Fibonacci                                  |Baixa |
 | 3      | Backlog  | Sequência de Cubos |Baixa|
