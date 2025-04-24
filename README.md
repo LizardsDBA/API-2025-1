@@ -8,7 +8,7 @@
 
  
 <div align="center">
-    <img src="assets/capa-readme.png" alt="Capa do Readme" width="100%" />
+    <img src="assets/capa-readme_2.png" alt="Capa do Readme" width="100%" />
 </div>
 
 <br />
@@ -45,7 +45,7 @@
 ## Integrantes do projeto
   
 <div align="center">
-  <img src="assets/integrantes.png" alt="Equipe e funções" width="600px" />
+  <img src="assets/integrantes_2.png" alt="Equipe e funções" width="600px" />
 </div>
 
 ## Backlog do Produto
