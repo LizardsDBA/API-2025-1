@@ -170,15 +170,11 @@ Inicio
 
    escreva("insira o ultimo numero da sequencia: ")
    leia (input)
-   //insere o numero 2 na sequencia caso num seja maior que 1
    se (input >= 2) entao
       escreva("2")
    fimse
-   //inicia o loop sequencia para mostrar os numeros ate o numero escolhido
    para i de 2 ate input passo 1 faca
-      //filtra todos os numeros pra impares
       se (i % 2 <> 0) entao
-         //incia o loop para verificar se o numero é primo
          para j de 1 ate i passo 1 faca
             se (i / j = i) entao
             senao
@@ -257,11 +253,11 @@ Inicio
    escreval ("        Sequencia Geometrica             ")
    escreval ("-----------------------------------------")
 
-   escreva("Informe o primeiro termo da sequência: ")
+   escreva("Informe o primeiro termo da sequencia: ")
    leia(input)
-   escreva("Informe a razão: ")
+   escreva("Informe a razao: ")
    leia(razao)
-   escreva("Informe o limite da sequência: ")
+   escreva("Informe o limite da sequencia: ")
    leia(termo)
 
    atual <- input
@@ -283,13 +279,13 @@ Inicio
    escreval("")
    Escreval("Digite um numero para variavel N: ")
    leia(input)
-   Escreval("Digite um limite para conhecer a Sequencia Alternada: ")
+   Escreval("Digite um limite para sequencia: ")
    leia(input2)
    limpatela
 
    i <-1
 
-   escreval("Sua sequencia alternada sao: ")
+   escreval("Sequencia alternada: ")
    escreval("")
    escreval("-----------------------------------------------------------------")
    Enquanto (i <= input2) faca
