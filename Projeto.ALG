@@ -122,12 +122,14 @@ Inicio
          limpatela
          Menu()
       caso 0
-         escreval("Encerrando programa...")
-fimalgoritmo
+      InformacoesProjeto()
+         //escreval("Encerrando programa...")
+
+//fimalgoritmo
 outrocaso
    escreval("Opção inválida! Tente novamente.")
 fimescolha
-ate falso
+ate retorno =0
 FimProcedimento
 
 Procedimento SequenciaFibonacci()
@@ -344,4 +346,5 @@ Inicio
    leia(nome)
    limpatela
    Menu()
+
 fimalgoritmo
