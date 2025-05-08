@@ -89,7 +89,7 @@ Inicio
       escreval("")
       escreval("------------------------------------------")
       escreval("O que deseja fazer agora?")
-      escreval("1 - Realizar novo cÃ¡lculo")
+      escreval("1 - Realizar novo cálculo")
       escreval("2 - Voltar ao menu principal")
       escreval("0 - Sair do programa")
       escreval("------------------------------------------")
@@ -128,7 +128,7 @@ Inicio
 
          //fimalgoritmo
       outrocaso
-         escreval("OpÃ§Ã£o invÃ¡lida! Tente novamente.")
+         escreval("Opção inválida! Tente novamente.")
       fimescolha
    ate retorno =0
 FimProcedimento
@@ -329,28 +329,6 @@ Inicio
    escreval ("---------------------------------------- ")
    escreval ("        Sequencia de Tribonacci          ")
    escreval ("---------------------------------------- ")
-   escreva("Informe um numero máximo: ")
-   leia(termo)
-   //o termo foi escolhido como captura do limite para
-   //os var "input" ficar mais intuitivo para guardar as informações
-
-
-   input <- 1
-   input2 <- 0
-   input3 <- 0
-   //inputs sendo usadas para guardar e ficar fácil de entender
-
-
-   escreva( input2," ", input, " ")
-   para i de 0 ate termo faca
-
-      j <- input + input2 + input3
-      input3 <- input2
-      input2 <- input
-      input <- j
-      i <- i + 1
-      escreva(j, " ")
-   fimPara
 
    PerguntarRepetir(9)
 FimProcedimento
