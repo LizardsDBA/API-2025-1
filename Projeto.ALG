@@ -18,12 +18,12 @@ Algoritmo "Menu API"
 // Data        :  24/02/2025 -
 
 Var
-   //Variaveis input e input2 sÃ£o variaveis de entradas de dados que sÃ£o reaproveitadas em todos os calculos
-   i, j, input, input2,input3, menu, termo : inteiro
+   //Variaveis input e input2 sao variaveis de entradas de dados que sao reaproveitadas em todos os calculos
+   i, j, input, input2, menu, termo : inteiro
    nome, resposta : caractere
    sequencia, razao, resultado, atual : real
 
-   // Procedimentos para cada operaÃ§Ã£o
+   // Procedimentos para cada operacao
 Procedimento Menu()
 Inicio
    escreval (" --------------------------------------------------------")
@@ -128,7 +128,7 @@ Inicio
 
          //fimalgoritmo
       outrocaso
-         escreval("Opção inválida! Tente novamente.")
+         escreval("Opção invalida! Tente novamente.")
       fimescolha
    ate retorno =0
 FimProcedimento
@@ -139,7 +139,7 @@ Inicio
    escreval ("        Sequencia de Fibonacci            ")
    escreval ("------------------------------------------")
 
-   escreva("Informe um numero máximo: ")
+   escreva("Informe o termo maximo da Sequencia Fibonacci: ")
    leia(termo)
    //o termo foi escolhido como captura do limite para
    //os var "input" ficar mais intuitivo para guardar as informações
