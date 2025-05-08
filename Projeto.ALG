@@ -19,7 +19,7 @@ Algoritmo "Menu API"
 
 Var
    //Variaveis input e input2 s√£o variaveis de entradas de dados que s√£o reaproveitadas em todos os calculos
-   i, j, input, input2, menu, termo : inteiro
+   i, j, input, input2,input3, menu, termo : inteiro
    nome, resposta : caractere
    sequencia, razao, resultado, atual : real
 
@@ -71,14 +71,14 @@ Inicio
       InformacoesProjeto()
    caso 0
       escreva ("Encerrando programa...")
-      FimAlgoritmo
-   outrocaso
-      escreval ("------------------------------------------")
-      escreval ("|            Comando Invalido !!         |")
-      escreval ("------------------------------------------")
-      escreval (" ")
-      escreval ("            Volte para o Menu")
-   fimescolha
+FimAlgoritmo
+outrocaso
+   escreval ("------------------------------------------")
+   escreval ("|            Comando Invalido !!         |")
+   escreval ("------------------------------------------")
+   escreval (" ")
+   escreval ("            Volte para o Menu")
+fimescolha
 FimProcedimento
 
 Procedimento PerguntarRepetir(opcao: inteiro)
@@ -123,14 +123,14 @@ Inicio
          limpatela
          Menu()
       caso 0
-      InformacoesProjeto()
+         InformacoesProjeto()
          //escreval("Encerrando programa...")
 
-//fimalgoritmo
-outrocaso
-   escreval("Op√ß√£o inv√°lida! Tente novamente.")
-fimescolha
-ate retorno =0
+         //fimalgoritmo
+      outrocaso
+         escreval("Op√ß√£o inv√°lida! Tente novamente.")
+      fimescolha
+   ate retorno =0
 FimProcedimento
 
 Procedimento SequenciaFibonacci()
@@ -138,6 +138,26 @@ Inicio
    escreval ("------------------------------------------")
    escreval ("        Sequencia de Fibonacci            ")
    escreval ("------------------------------------------")
+
+   escreva("Informe um numero m·ximo: ")
+   leia(termo)
+   //o termo foi escolhido como captura do limite para
+   //os var "input" ficar mais intuitivo para guardar as informaÁıes
+
+
+   input <- 1
+   input2 <- 0
+   //inputs sendo usadas para guardar e ficar f·cil de entender
+
+   escreva( input2," ", input, " ")
+   para i de 0 ate termo faca
+
+      j <- input + input2
+      input2 <- input
+      input <- j
+      i <- i + 1
+      escreva(j, " ")
+   fimPara
    PerguntarRepetir(1)
 FimProcedimento
 
@@ -309,6 +329,29 @@ Inicio
    escreval ("---------------------------------------- ")
    escreval ("        Sequencia de Tribonacci          ")
    escreval ("---------------------------------------- ")
+   escreva("Informe um numero m·ximo: ")
+   leia(termo)
+   //o termo foi escolhido como captura do limite para
+   //os var "input" ficar mais intuitivo para guardar as informaÁıes
+
+
+   input <- 1
+   input2 <- 0
+   input3 <- 0
+   //inputs sendo usadas para guardar e ficar f·cil de entender
+
+
+   escreva( input2," ", input, " ")
+   para i de 0 ate termo faca
+
+      j <- input + input2 + input3
+      input3 <- input2
+      input2 <- input
+      input <- j
+      i <- i + 1
+      escreva(j, " ")
+   fimPara
+
    PerguntarRepetir(9)
 FimProcedimento
 
