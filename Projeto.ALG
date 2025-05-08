@@ -18,11 +18,12 @@ Algoritmo "Menu API"
 // Data        :  24/02/2025 -
 
 Var
+   //Variaveis input e input2 s√£o variaveis de entradas de dados que s√£o reaproveitadas em todos os calculos
    i, j, input, input2, menu, termo : inteiro
    nome, resposta : caractere
    sequencia, razao, resultado, atual : real
 
-   // Procedimentos para cada operaÁ„o
+   // Procedimentos para cada opera√ß√£o
 Procedimento Menu()
 Inicio
    escreval (" --------------------------------------------------------")
@@ -88,7 +89,7 @@ Inicio
       escreval("")
       escreval("------------------------------------------")
       escreval("O que deseja fazer agora?")
-      escreval("1 - Realizar novo c·lculo")
+      escreval("1 - Realizar novo c√°lculo")
       escreval("2 - Voltar ao menu principal")
       escreval("0 - Sair do programa")
       escreval("------------------------------------------")
@@ -127,7 +128,7 @@ Inicio
 
 //fimalgoritmo
 outrocaso
-   escreval("OpÁ„o inv·lida! Tente novamente.")
+   escreval("Op√ß√£o inv√°lida! Tente novamente.")
 fimescolha
 ate retorno =0
 FimProcedimento
@@ -232,7 +233,7 @@ Inicio
    escreval ("---------------------------------------- ")
    escreval ("     Sequencia de Quadrados Perfeitos    ")
    escreval ("---------------------------------------- ")
-   escreva("Insira o n˙mero limite da sequÍncia: ")
+   escreva("Insira o n√∫mero limite da sequ√™ncia: ")
    leia(input)
    para i de 1 ate input passo 1 faca
       input <- i * i
