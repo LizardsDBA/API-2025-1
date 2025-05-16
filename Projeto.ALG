@@ -21,7 +21,7 @@ Var
    //Variaveis input e input2 sao variaveis de entradas de dados que sao reaproveitadas em todos os calculos
    i, j, input, input2, input3, menu, termo : inteiro
    nome, resposta : caractere
-   sequencia, razao, resultado, atual : real
+   sequencia, razao, resultado, atual, cubos : real
 
    // Procedimentos para cada operacao
 Procedimento Menu()
@@ -267,6 +267,21 @@ Inicio
    escreval ("-----------------------------------------")
    escreval ("        Sequencia de Cubos               ")
    escreval ("-----------------------------------------")
+
+   escreval("")
+   escreval("Digite um número para o limite da sequência:")
+   leia(input)
+
+
+
+   para i de 1 ate input faca
+
+
+      cubos <- i^3
+      escreval("")
+      escreval(i ,"³", " = ", cubos)
+
+   fimPara
    PerguntarRepetir(6)
 FimProcedimento
 
