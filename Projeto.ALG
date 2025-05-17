@@ -27,7 +27,7 @@ Var
 Procedimento Menu()
 Inicio
    escreval (" --------------------------------------------------------")
-   escreval ("                Menu de Operacoes Matematicas   ")
+   escreval ("                Menu de Sequencias Matematicas   ")
    escreval (" --------------------------------------------------------")
    escreval("        Ola, ", nome, "! Escolha uma opcao para continuar:")
    escreval
@@ -43,7 +43,7 @@ Inicio
    escreval ("10 - Informacoes do Projeto")
    escreval ("0- Fechar")
    escreval (" ")
-   escreval(" Escolha uma operacao: ")
+   escreval(" Escolha uma sequencia para iniciar: ")
    leia (menu)
    limpatela
 
@@ -128,7 +128,7 @@ Inicio
 
          //fimalgoritmo
       outrocaso
-         escreval("Opção invalida! Tente novamente.")
+         escreval("Opçao invalida! Tente novamente.")
       fimescolha
    ate retorno =0
 FimProcedimento
@@ -253,7 +253,7 @@ Inicio
    escreval ("---------------------------------------- ")
    escreval ("     Sequencia de Quadrados Perfeitos    ")
    escreval ("---------------------------------------- ")
-   escreva("Insira o nÃºmero limite da sequÃªncia: ")
+   escreva("Insira o numero limite da sequencia: ")
    leia(input)
    para i de 1 ate input passo 1 faca
       input <- i * i
@@ -275,7 +275,8 @@ Inicio
 
 
    para i de 1 ate input faca
-
+   //A sequencia de cubos mostra ao usuario as sequencias de 1,2,3,4....
+   //elevadas ao cubo, ou seja, elevadas ao expoente 3.
 
       cubos <- i^3
       escreval("")
@@ -396,7 +397,7 @@ FimProcedimento
 Inicio
    //criando menu para as operacoes
    escreval("-----------Projeto API 2025-1----------")
-   escreval("-Calculadora de Operacoes Matematicas-")
+   escreval("-Calculadora de Sequencias Matematicas-")
    escreval("---------------------------------------")
    escreval("")
    escreval
