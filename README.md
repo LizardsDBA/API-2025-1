@@ -73,7 +73,7 @@
 | Sprint | Validações | Respostas |
 |------------|------------|-----------|
 | 1          | Como deve ser o Menu? | Toda Sprint haverá mudanças e nessa só poderemos utilizar a função "SE" |
-| 1          | As operações matemáticas que precisamos fazer ( em visualg), terão de ser entregues como? | O programa deve permitir que faça o cálculo de cada função.|
+| 1          | As sequências matemáticas que precisamos fazer ( em visualg), terão de ser entregues como? | O programa deve permitir que faça o cálculo de cada função.|
 | 1          | Como devemos apresentar? | Deve-se apresentar o código rodando na hora e GitHub estruturado.|
 
 ## Requisitos de Permanência
@@ -100,7 +100,7 @@ Conversamos sobre alguns pontos importantes para que ninguém seja retirado do g
 <pre><code>git clone https://github.com/LizardsDBA/API-2025-1.git</code></pre>
 <ol start="2">
     <li>Abra o código-fonte no VisualG.</li>
-    <li>Execute o programa e siga as instruções para utilizar as operações desejadas.</li>
+    <li>Execute o programa e siga as instruções para utilizar as sequências desejadas.</li>
     <li>Após fazer alterações nos arquivos, adicione-os ao controle de versão:</li>
 </ol>
 <pre><code>git add .</code></pre>
