@@ -13,11 +13,11 @@
 
 <br />
 
-<p>Somos estudantes do 1º semestre do curso de Banco de Dados na FATEC SJC, estamos dedicados ao desenvolvimento do projeto "Desenvolvimento de Cálculo de Sequências Lógicas" neste repositório. O projeto visa oferecer implementações de uma ampla variedade de operações matemáticas, em VisualG.</p>
+<p>Somos estudantes do 1º semestre do curso de Banco de Dados na FATEC SJC, estamos dedicados ao desenvolvimento do projeto "Desenvolvimento de Cálculo de Sequências Lógicas" neste repositório. O projeto visa oferecer implementações de uma ampla variedade de sequências matemáticas, em VisualG.</p>
 
 ## Índice
 
-♦ [Operações Disponíveis](#operações-disponíveis) <br />
+♦ [Sequências Disponíveis](#sequÊncias-disponíveis) <br />
 ♦ [Integrantes do projeto](#integrantes-do-projeto) <br />
 ♦ [Backlog do Produto](#backlog-do-produto) <br />
 ♦ [Manual do Usuário](#manual-do-usuário) <br />
@@ -28,7 +28,7 @@
 ♦ [Boas práticas](#boas-práticas) <br />
 ♦ [Contato](#contato) <br />
     
-## Operações Disponíveis
+## Sequências Disponíveis
    <ol>
         <li><b>Números Triangulares:</b> Números triangulares são números naturais que podem formar um triângulo equilátero de pontos, sendo calculados pela fórmula Tn = n x (n=1)/2, onde n é o número natural.</li>
         <li><b>Sequência Fatorial:</b> A sequência fatorial é formada pelo produto dos números naturais consecutivos, definida por 𝑛!=𝑛×(𝑛−1)×(𝑛−2)×⋯×1n!=n×(n−1)×(n−2)×⋯×1, com 0!=10!=1</li>
