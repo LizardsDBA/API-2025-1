@@ -132,7 +132,7 @@ Inicio
          sair <- verdadeiro
          retorno <- 0
       outrocaso
-         escreval("Opção inválida! Tente novamente.")
+         escreval("Opcao invalida! Tente novamente.")
       fimescolha
 
       se sair entao
