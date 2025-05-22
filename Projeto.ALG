@@ -84,7 +84,10 @@ FimProcedimento
 Procedimento PerguntarRepetir(opcao: inteiro)
 Var
    retorno: inteiro
+   sair: logico
 Inicio
+   sair <- falso  //resolução do bug de recursão dentro desse procedimento
+
    repita
       escreval("")
       escreval("------------------------------------------")
@@ -100,37 +103,42 @@ Inicio
       caso 1
          limpatela
          escolha opcao
-         caso 1
-            SequenciaFibonacci()
-         caso 2
-            NumerosTriangulares()
-         caso 3
-            NumerosPrimos()
-         caso 4
-            SequenciaFatorial()
-         caso 5
-            QuadradosPerfeitos()
-         caso 6
-            SequenciaCubos()
-         caso 7
-            SequenciaGeometrica()
-         caso 8
-            SequenciaAlternada()
-         caso 9
-            SequenciaTribonacci()
+            caso 1
+               SequenciaFibonacci()
+            caso 2
+               NumerosTriangulares()
+            caso 3
+               NumerosPrimos()
+            caso 4
+               SequenciaFatorial()
+            caso 5
+               QuadradosPerfeitos()
+            caso 6
+               SequenciaCubos()
+            caso 7
+               SequenciaGeometrica()
+            caso 8
+               SequenciaAlternada()
+            caso 9
+               SequenciaTribonacci()
          fimescolha
       caso 2
          limpatela
+         retorno <- 0
          Menu()
       caso 0
+         limpatela
          InformacoesProjeto()
-         //escreval("Encerrando programa...")
-
-         //fimalgoritmo
+         sair <- verdadeiro
+         retorno <- 0
       outrocaso
-         escreval("Opçao invalida! Tente novamente.")
+         escreval("Opção inválida! Tente novamente.")
       fimescolha
-   ate retorno =0
+
+      se sair entao
+         interrompa
+      fimse
+   ate retorno = 0
 FimProcedimento
 
 Procedimento SequenciaFibonacci()
