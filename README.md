@@ -53,16 +53,16 @@
 
 | Sprint | Status | Descrição                                                             | Priorização |
 |--------|----|-----------------------------------------------------------------------|-------------|
-| 1,2 e 3      | Em andamento | Menu          |Alta  |
+| 1,2 e 3      | Concluido :white_check_mark: | Menu          |Alta  |
 | 1      | Concluido :white_check_mark:  | Números Triangulares                                               |Alta  |
 | 1      | Concluido :white_check_mark:  | Sequência Fatorial                                                 |Média |
 | 1      | Concluido :white_check_mark:  | Sequência Alternada                                               |Alta |
 | 2      | Concluido :white_check_mark:  | Sequência Geométrica                                            |Alta |
 | 2      | Concluido :white_check_mark:  | Sequência de Números Primos                  |Média|
 | 2      | Concluido :white_check_mark:  | Sequência de Quadrados Perfeitos                  |Baixa |
-| 3      | Backlog  | Sequência Tribonacci                       |Média |
-| 3      | Backlog  | Sequência de Fibonacci                                  |Baixa |
-| 3      | Backlog  | Sequência de Cubos |Baixa|
+| 3      | Concluido :white_check_mark:  | Sequência Tribonacci                       |Média |
+| 3      | Concluido :white_check_mark:  | Sequência de Fibonacci                                  |Baixa |
+| 3      | Concluido :white_check_mark:  | Sequência de Cubos |Baixa|
 
 
 ## Manual do Usuário
