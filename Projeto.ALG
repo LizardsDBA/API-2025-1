@@ -88,57 +88,55 @@ Var
 Inicio
    sair <- falso  //resolução do bug de recursão dentro desse procedimento
 
-   repita
-      escreval("")
-      escreval("------------------------------------------")
-      escreval("O que deseja fazer agora?")
-      escreval("1 - Realizar novo cálculo")
-      escreval("2 - Voltar ao menu principal")
-      escreval("0 - Sair do programa")
-      escreval("------------------------------------------")
-      escreva("Sua escolha: ")
-      leia(retorno)
+   escreval("")
+   escreval("------------------------------------------")
+   escreval("O que deseja fazer agora?")
+   escreval("1 - Realizar novo cálculo")
+   escreval("2 - Voltar ao menu principal")
+   escreval("0 - Sair do programa")
+   escreval("------------------------------------------")
+   escreva("Sua escolha: ")
+   leia(retorno)
 
-      escolha retorno
+   escolha retorno
+   caso 1
+      limpatela
+      escolha opcao
       caso 1
-         limpatela
-         escolha opcao
-            caso 1
-               SequenciaFibonacci()
-            caso 2
-               NumerosTriangulares()
-            caso 3
-               NumerosPrimos()
-            caso 4
-               SequenciaFatorial()
-            caso 5
-               QuadradosPerfeitos()
-            caso 6
-               SequenciaCubos()
-            caso 7
-               SequenciaGeometrica()
-            caso 8
-               SequenciaAlternada()
-            caso 9
-               SequenciaTribonacci()
-         fimescolha
+         SequenciaFibonacci()
       caso 2
-         limpatela
-         retorno <- 0
-         Menu()
-      caso 0
-         limpatela
-         InformacoesProjeto()
-         sair <- verdadeiro
-         retorno <- 0
-      outrocaso
-         escreval("Opcao invalida! Tente novamente.")
+         NumerosTriangulares()
+      caso 3
+         NumerosPrimos()
+      caso 4
+         SequenciaFatorial()
+      caso 5
+         QuadradosPerfeitos()
+      caso 6
+         SequenciaCubos()
+      caso 7
+         SequenciaGeometrica()
+      caso 8
+         SequenciaAlternada()
+      caso 9
+         SequenciaTribonacci()
       fimescolha
+   caso 2
+      limpatela
+      retorno <- 0
+      Menu()
+   caso 0
+      limpatela
+      InformacoesProjeto()
+      sair <- verdadeiro
+      retorno <- 0
+   outrocaso
+      escreval("Opcao invalida! Tente novamente.")
+   fimescolha
 
-      se sair entao
-         interrompa
-      fimse
-   ate retorno = 0
+   se sair entao
+      interrompa
+   fimse
 FimProcedimento
 
 Procedimento SequenciaFibonacci()
@@ -284,8 +282,8 @@ Inicio
 
 
    para i de 1 ate input faca
-   //A sequencia de cubos mostra ao usuario as sequencias de 1,2,3,4....
-   //elevadas ao cubo, ou seja, elevadas ao expoente 3.
+      //A sequencia de cubos mostra ao usuario as sequencias de 1,2,3,4....
+      //elevadas ao cubo, ou seja, elevadas ao expoente 3.
 
       cubos <- i^3
       escreval("")
