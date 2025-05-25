@@ -199,8 +199,9 @@ Inicio
    escreval ("        Sequencia de Numeros Primos       ")
    escreval ("------------------------------------------")
 
-   escreva("insira o ultimo numero da sequencia: ")
+   escreva("insira um número e descubra todos os numeros primos ate ele: ")
    leia (input)
+   escreval("Os numeros primos ate", input, " sao:")
    se (input >= 2) entao
       escreva("2")
    fimse
